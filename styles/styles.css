@@ -1,0 +1,102 @@
+@import url(/styles/reset.css);
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/*CSS STYLES*/
+body {
+  background-color: hsl(30, 38%, 92%);
+}
+
+.container {
+  display: flex;
+  height: 98vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.advertising {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  display: flex;
+  justify-items: left;
+  flex-direction: row-reverse;
+  width: 70vh;
+}
+
+.advertising > img {
+  width: 40vh;
+  border-radius: 10px 0 0 10px;
+}
+
+.advertising > .text {
+  padding: 1.5rem;
+  flex-grow: 1;
+}
+
+/* ITENS FILHOS*/
+
+.type {
+  font-family: montserrat, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-family: Fraunces;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.description {
+  font-family: montserrat, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: hsl(228, 12%, 48%);
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  font-family: Fraunces;
+  color: hsl(158, 36%, 37%);
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.price > .old-price {
+  font-size: 0.8rem;
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+  margin-left: 1.25rem;
+}
+
+.add {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  border-style: none;
+  background-color: hsl(158, 36%, 37%);
+  color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add:hover {
+  background-color: hsl(158, 42%, 18%);
+}
